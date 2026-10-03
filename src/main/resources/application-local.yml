@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/terraform_gui_local
+    username: terraform_admin
+    password: admin
+    driver-class-name: org.postgresql.Driver

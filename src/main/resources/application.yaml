@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: terraform-gui-backend
+
+  profiles:
+    active: local
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: terraform
+
+  flyway:
+    enabled: true
+    create-schemas: true
+    schemas: terraform
+    default-schema: terraform
+    locations: classpath:db/migration
+
+server:
+  port: 8080

@@ -1,6 +1,6 @@
 package com.terraformgui.backend.service;
 
-import com.terraformgui.backend.dto.UserRequestDto;
+import com.terraformgui.backend.dto.request.UserRequestDto;
 import com.terraformgui.backend.entity.User;
 import com.terraformgui.backend.exception.InvalidCredentialsException;
 import com.terraformgui.backend.exception.UserAlreadyExistsException;

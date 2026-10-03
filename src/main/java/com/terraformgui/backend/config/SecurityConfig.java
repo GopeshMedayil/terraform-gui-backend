@@ -23,6 +23,7 @@ public class SecurityConfig {
                 // Authorization rules
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/auth/**").permitAll() // allow register & login
+                        .requestMatchers("/api/v1/projects/**").permitAll()
                         .anyRequest().authenticated()
                 )
 

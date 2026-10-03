@@ -1,13 +1,12 @@
 package com.terraformgui.backend.controller;
 
-import com.terraformgui.backend.dto.LoginResponseDto;
-import com.terraformgui.backend.dto.UserRequestDto;
-import com.terraformgui.backend.dto.UserResponseDto;
+import com.terraformgui.backend.dto.response.LoginResponseDto;
+import com.terraformgui.backend.dto.request.UserRequestDto;
+import com.terraformgui.backend.dto.response.UserResponseDto;
 import com.terraformgui.backend.entity.User;
 import com.terraformgui.backend.service.JwtUtil;
 import com.terraformgui.backend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
